@@ -20,19 +20,17 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-
-assets:
-  - assets/alladins.jpg
-  - assets/angelhasfallen.jpeg
-  - assets/avenger_edited.jpg
-  - assets/c_marvel_edited.jpg
-  - assets/doraemon.jpeg
-  - assets/friend_zone.jpg
-  - assets/logo_edited.jpg
-  - assets/mib.jpeg
-  - assets/parasite.jpeg
-  - assets/spiderman.jpeg
+  assets:
+    - assets/
+    - assets/alladin.jpeg
+    - assets/angelhasfallen.jpeg
+    - assets/avenger_edited.jpeg
+    - assets/c_marvel_edited.jpeg
+    - assets/doraemon.jpeg
+    - assets/friend_zone.jpeg
+    - assets/mib.jpeg
+    - assets/parasite.jpeg
+    - assets/spiderman.jpeg
 
   # fonts:
   #   - family: Schyler
