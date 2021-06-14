@@ -1,44 +1,22 @@
+import 'package:bj_movies/customDrawer.dart';
 import 'package:flutter/material.dart';
 import 'package:bj_movies/Body.dart';
 
 class Home extends StatelessWidget {
+  final String username;
+
+  Home({this.username});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffffffcc),
       appBar: AppBar(
         title: Text('Home'),
+        backgroundColor: Color(0xffDBA13B),
       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            DrawerHeader(
-                child: Column(
-              children: <Widget>[
-                Text('Welcome, '),
-                Text('TestUser123'),
-              ],
-            )),
-            ListTile(
-              title: Text('Home'),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              title: Text('About Us'),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              title: Text('Log Out'),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-          ],
-        ),
+      drawer: CustomDrawer(
+        username: username,
       ),
       body: Body(),
     );
