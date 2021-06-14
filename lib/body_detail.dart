@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Body extends StatefulWidget {
+class BodyDetail extends StatefulWidget {
   @override
-  _BodyState createState() => _BodyState();
+  _BodyDetailState createState() => _BodyDetailState();
 }
 
-class _BodyState extends State<Body> {
+class _BodyDetailState extends State<BodyDetail> {
   @override
   Widget build(BuildContext context) {
     return Column(
